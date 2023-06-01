@@ -1,0 +1,135 @@
+list_1 = [] # Создаем пустой список
+list_1 = list() # Создаем пустой список
+print(list_1)
+list_1 = [1, 2, 3, 8 ]
+
+print(*list_1) # "*"- убрать квадратные скобочки
+for i in list_1:
+    print(i)# по порядку список
+
+print(len(list_1)) # считает сколько элеметнов в списке
+print(list_1[0]) # обращение к элементу из списка
+# (тип как в массив) а если с "-" то с конца в водиться
+list_1 = [1, 2, 3, 8 ]
+print(list_1)
+list_1.append(9) # добавление элемента
+print(list_1)
+
+list_1 = []
+for i in range(5):
+    list_1.append(i)
+    print(list_1)
+
+# Убирает послений элемент
+list 1 - [12, 7, -1, 21, e]
+a = list_1.pop()
+print(a) # 0
+print(list_1) # [12, 7, -1, 21] 
+print(list_1.pop()) # 21 
+print (list_1) # [12, 7, -1] 
+print(list_1.pop()) # -1
+print(list_1) # [12, 71
+
+
+# Удаление конкретного элемента из списка
+list_1 = [12, 7, -1, 21, 0]
+print(list 1.pop(1)) # 12 
+print(list_1) # [7, -1, 21, 0]
+
+# Добавление элемента на нужную позицию
+list_1 = [12, 7, -1, 21, 0]
+print(list1. insert(2, 11)) # на второй элемент втавляеться индекс 11 
+print(list1) # [12, 7, 11, -1, 21, 0 ]
+
+list_1 - [1, 2, 3,]
+print(list_1[0])                    #1
+print(list_1[1])                    #2
+print(list_1[len(list_1)-1])        # 10 последний элемент выводиться также print(list_1[-1])
+print(list_1[-5])                   # 6
+print(list_1[:])                   # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]                
+print (list_1[:2])                  # [1, 2] до второгго индекса
+print(list_1[len(list_1)-2:])      #[9, 10]
+print(list_1[2:9])                 # [3, 4, 5, 6, 7, 8, 9]
+print(list_1[6:-18])                #[]
+print(list_1[0:len(list_1) :61])    # [1, 7]
+print(list_1[::6])                  # [1, 7]
+
+#Кортеж не измениемый список
+t = ()
+print (type(t))
+t = (1, 5, 3,)
+print (type(t))
+v = [1, 8, 9]
+print(v)
+print(type(v))
+v = tuple(v)
+print(v)
+print (type(v))
+a,b, c = v
+print(a, b, c)
+
+#Словари неупорядоченные коллекции произвольных объектов с доступом по ключу
+dictionary ={}
+dictionary= {'up': 'Left': 'down':  'right':}
+print (dictionary)# {'up': 'left': 'down': 'right'}
+print (dictionary['left' ]) # dktdj
+# типы ключей могут отличаться
+print (dictionary['up'])# вверх
+# типы ключей могут отличаться
+dictionary['left'] =
+print (dictionary['left']) # = 
+print (dictionary['type']) # KeyError: 'type'
+del dictionary['left']  # удаление элемента
+for item in dictionary:# for (k,v) in dictionary. items () :
+print('{}: {}'.format(item, dictionary[item]))
+# up: вверх
+# down: внез
+# right: вправо
+
+# Множества содержат в себе уникальные элементы не обязательно упорядоченное
+colors = {'red' 'gred' 'blue'}
+print (colors) # ('red','green','blue'}
+colors.add('red' ) 
+print (colors)# {'red','green',"blue'}
+colors.add('gray') #добавыляем
+print (colors)# ('red','green','blue', 'gray')
+colors. remove ('red') # удаляем
+print (colors) # ('green', 'blue', 'gray') 
+colors.remove ('red') # KeyError: 'red* 
+colors.discard('red') # ok проверяет есть ли элемет такой
+print (colors) # ('green',"blue', 'gray')
+colors.clear() # { } все удалить
+print (colors) # set() пустое множество
+q = set() # тоже можно создать множество
+
+
+# Операции со множествами в Pthon
+a = {1, 2, 3, 5, 8}
+b = (2, 5, 8, 13, 21) 
+c = a.cop()#{1, 2, 3, 5, 8}
+u = a.union (b) # {1, 2, 3, 5, 8, 13,}
+i = a. intersection (b) #{8, 2, 5}
+di = a. difference(b)# d1 = {1, 3}
+dr = b.difference(a) # dr = {13, 21}
+q = a.union(b) .difference(a.intersection(b)) # (1, 21, 3, 13)
+
+# замороженное множество
+b = frozenset(a)
+# прописывает буквы по строчно
+some_srt = ' hello  world'
+for letter in some_srt:
+print(letter)
+some_list.insert(2, false) #догбаваляем индекс "2" и на какой элемент заменить "false"
+
+# удаление элемента
+for element in some_list:
+    if element == True:
+        some_list.remove(True)
+print (some_list)
+
+# все элементы  переводяться в список'
+n = int(input ('Ввидите кол-во чисел'))
+some_list =[]
+for _ in range(n):
+    some_list.append(int(input()))
+print(some_list)
