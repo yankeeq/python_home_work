@@ -4,7 +4,7 @@
 # *Пример:*
 # 5 1 2 3 4 5
 # 3 -> 1
-
+'''
 n = int(input('Введите размер элементов списка: '))
 list_n = input('Введите элементы списка через пробел: ').split()
 arr = list(map(int, list_n))
@@ -14,7 +14,7 @@ for i in range(n):
     if arr[i] == x:
         count += 1
 print(f'Число {x} встречается в списке А {count} раз.')
-
+'''
 
 # Задача 18: Требуется найти в списке A самый близкий по величине элемент к заданному числу X.
 # Пользователь в первой строке вводит натуральное число N – количество элементов в массиве. В 
@@ -24,3 +24,15 @@ print(f'Число {x} встречается в списке А {count} раз.
 
 # 5 1 2 3 4 5
 #     6 -> 5
+'''
+import random
+n = int(input('Введите размер массива: '))
+x = int(input('Введите искомое число x: '))
+arr = []
+for i in range(n):
+    arr.append(random.randrange(n))
+print(arr)
+def nearval(arr, number):
+    return min(arr, key=lambda x: abs(number - abs(x))) 
+print(f'Ближайшее к {x} число в массиве: {nearval(arr, x)}')
+'''
